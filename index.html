@@ -273,20 +273,13 @@ fill="#FFFFFF" opacity=".1" stroke="none">
   }
 </script>
 <script>
-  
-  /*time=setInterval(function(){
-    if (local("loading")) {
-      //vibrate(300)
-      document.getElementById("container").style.display = "none";
-      document.getElementById("elipsis").style.display = "block";
-    } else {
-      
-      document.getElementById("elipsis").style.display = "none";
-      document.getElementById("container").style.display = "flex";
-    }
-  
-  },300);*/
-</script>
+  const myTimeout = setTimeout(myHome, 1500);
+  function myHome() {
+    document.getElementById("elipsis").style.display = "none";
+    document.getElementById("container").style.display = "flex";
+  }
+    
+ </script>
 
 </body>
 </html>
