@@ -264,11 +264,15 @@ fill="#FFFFFF" opacity=".1" stroke="none">
 <script>
 
   function btnSearch() {
-    let valueinput = document.getElementById("input").value;
-    if (valueinput) {
-      location.href = "https://www.google.com/search?q=" + valueinput;
-      return false;
-      //performTask("GriddyBrowser WebSearch","10","1", valueinput);
+    var width = document.getElementById("input").clientWidth;
+    if (width == 50) {
+    } else {
+      let valueinput = document.getElementById("input").value;
+      if (valueinput) {
+        location.href = "https://www.google.com/search?q=" + valueinput;
+        return false;
+        //performTask("GriddyBrowser WebSearch","10","1", valueinput);
+      }
     }
   }
 </script>
